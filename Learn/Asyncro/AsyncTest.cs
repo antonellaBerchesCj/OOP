@@ -4,22 +4,21 @@ namespace Learn.Asyncro
 {
     public static class AsyncTest
     {
-        public static void AsyncAwait1()
+        public static async Task AsyncAwait1()
         {
             var a = new AsyncExample();
             var s = new Stopwatch();
             s.Start();
-            //Assert.AreEqual("OneTwo", a.ExecuteSync());
             a.ExecuteSync();
             Console.WriteLine("Sync executed in: " + s.ElapsedMilliseconds);
             s.Reset();
 
             s.Start();
-            var t = Task.Run(() => a.ExecuteAsync());
+            //var t = Task.Run(() => a.ExecuteAsync());
+            await a.ExecuteAsync();
             //Assert.AreEqual("OneTwo", t.Result);
             Console.WriteLine("Async executed in: " + s.ElapsedMilliseconds);
             s.Reset();
-
         }
     }
 
@@ -37,12 +36,14 @@ namespace Learn.Asyncro
         private string Operation2()
         {
             Thread.Sleep(5);
+            Console.WriteLine("Two");
             return "Two";
         }
 
         private string Operation1()
         {
             Thread.Sleep(5);
+            Console.WriteLine("One");
             return "One";
         }
 
@@ -53,6 +54,7 @@ namespace Learn.Asyncro
 
             var o1Result = await o1;
             var o2Result = await o2;
+            Console.WriteLine(o1Result + o2Result);
             return o1Result + o2Result;
         }
 
@@ -61,6 +63,7 @@ namespace Learn.Asyncro
             return await Task.Run(() =>
             {
                 Thread.Sleep(3);
+                Console.WriteLine("Two");
                 return "Two";
             });
         }
@@ -70,6 +73,7 @@ namespace Learn.Asyncro
             return await Task.Run(() =>
             {
                 Thread.Sleep(3);
+                Console.WriteLine("One");
                 return "One";
             });
         }
