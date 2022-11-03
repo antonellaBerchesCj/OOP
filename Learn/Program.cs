@@ -87,4 +87,6 @@ using Learn.OOPprinciples;
 
 //Increments.Execute();
 //Console.WriteLine(DelegateLambdaAnonymous.LambdaFuncTest());
-await AsyncTest.AsyncAwait1();
+
+//await AsyncTest.AsyncAwait1();
+
