@@ -10,7 +10,7 @@
 
         public List<string> GetBasket() => _basket;
         
-        public abstract List<string> _basket2 { get; } // property
+        //public abstract List<string> _basket2 { get; } // property
 
 
         abstract public List<string> Load();
