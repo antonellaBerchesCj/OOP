@@ -23,40 +23,6 @@
         }
     }
 
-    public class Antonella : IShopping
-    {
-        public void BuyFavouriteFood()
-        {
-            List<string> list = new List<string>();
-            list.Add("biscuits");
-            list.Add("pasta");
-
-            list.ForEach(l => Console.WriteLine(l));
-        }
-
-        public void DoSomethingElse()
-        {
-            Console.WriteLine("zzzz");
-        }
-    }
-
-    public class David : IShopping
-    {
-        public void BuyFavouriteFood()
-        {
-            List<string> list = new List<string>();
-            list.Add("chocolate");
-            list.Add("sweets");
-
-            list.ForEach(l => Console.WriteLine(l));
-        }
-
-        public void DoSomethingElse()
-        {
-            Console.WriteLine("ruun");
-        }
-    }
-
     public class Magazin_Electrocasnice : Shopping_withAbstractClass
     {
         public override void Delete()
@@ -109,6 +75,40 @@
         public override int Update(List<string> products)
         {
             return 1;
+        }
+    }
+
+    public class Antonella : IShopping
+    {
+        public void BuyFavouriteFood()
+        {
+            List<string> list = new List<string>();
+            list.Add("biscuits");
+            list.Add("pasta");
+
+            list.ForEach(l => Console.WriteLine(l));
+        }
+
+        public void DoSomethingElse()
+        {
+            Console.WriteLine("zzzz");
+        }
+    }
+
+    public class David : IShopping
+    {
+        public void BuyFavouriteFood()
+        {
+            List<string> list = new List<string>();
+            list.Add("chocolate");
+            list.Add("sweets");
+
+            list.ForEach(l => Console.WriteLine(l));
+        }
+
+        public void DoSomethingElse()
+        {
+            Console.WriteLine("ruun");
         }
     }
 }
