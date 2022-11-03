@@ -83,6 +83,8 @@
 
 //await AsyncTest.AsyncAwait1();
 
+#region shoppingCart
+
 Antonella a = new Antonella();
 a.BuyFavouriteFood(); // call abstract class
 a.DoSomethingElse(); // call regular method (DoSomethingElse() is not abstract method)
@@ -93,6 +95,10 @@ David d = new David();
 d.BuyFavouriteFood(); // call abstract class
 d.DoSomethingElse(); // call regular method (DoSomethingElse() is not abstract method)
 
-Shopping_withAbstractClass s = new Magazin();
+Console.WriteLine();
+
+Shopping_withAbstractClass s = new Magazin_Electrocasnice();
 s.BuyFavouriteFood();
 s.DoSomethingElse();
+
+#endregion

@@ -12,10 +12,10 @@
 
 
         abstract public void BuyFavouriteFood();
-        abstract public void Load(List<string> products);
+        abstract public void Load();
+        abstract public void Store();
+        abstract public void Delete();
         abstract public void Update(List<string> products);
-        abstract public void Store(List<string> products);
-        abstract public void Delete(List<string> products);
 
 
         public void DoSomethingElse()
@@ -23,23 +23,6 @@
             _basket.ForEach(b => Console.WriteLine(b));
         }
 
-        //public void Execute()
-        //{
-        //    Antonella a = new Antonella();
-        //    a.BuyFavouriteFood(); // call abstract class
-        //    a.DoSomethingElse(); // call regular method (DoSomethingElse() is not abstract method)
-
-        //    Console.WriteLine();
-
-        //    David d = new David();
-        //    d.BuyFavouriteFood(); // call abstract class
-        //    d.DoSomethingElse(); // call regular method (DoSomethingElse() is not abstract method)
-
-        //    Shopping_withAbstractClass s = new Magazin();
-        //    s.BuyFavouriteFood();
-        //    s.DoSomethingElse();
-
-        //}
     }
 
     public class Antonella : IShopping
@@ -76,31 +59,49 @@
         }
     }
 
-    public class Magazin : Shopping_withAbstractClass
+    public class Magazin_Electrocasnice : Shopping_withAbstractClass
     {
         public override void BuyFavouriteFood()
         {
-            throw new NotImplementedException();
         }
 
-        public override void Delete(List<string> products)
+        public override void Delete()
         {
-            throw new NotImplementedException();
         }
 
-        public override void Load(List<string> products)
+        public override void Load()
         {
-            throw new NotImplementedException();
         }
 
-        public override void Store(List<string> products)
+        public override void Store()
         {
-            throw new NotImplementedException();
         }
 
         public override void Update(List<string> products)
         {
-            throw new NotImplementedException();
+        }
+    }
+
+    public class Magazin_Food : Shopping_withAbstractClass
+    {
+        public override void BuyFavouriteFood()
+        {
+        }
+
+        public override void Delete()
+        {
+        }
+
+        public override void Load()
+        {
+        }
+
+        public override void Store()
+        {
+        }
+
+        public override void Update(List<string> products)
+        {
         }
     }
 }
