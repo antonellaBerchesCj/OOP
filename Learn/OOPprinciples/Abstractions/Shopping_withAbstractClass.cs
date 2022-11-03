@@ -2,13 +2,15 @@
 {
     public abstract class Shopping_withAbstractClass
     {
-        private List<string> _basket;
+        private List<string> _basket; // field
         public Shopping_withAbstractClass()
         {
             _basket = new List<string> { "prod1", "prod2" };
         }
 
         public List<string> GetBasket() => _basket;
+        
+        public abstract List<string> _basket2 { get; } // property
 
 
         abstract public List<string> Load();
