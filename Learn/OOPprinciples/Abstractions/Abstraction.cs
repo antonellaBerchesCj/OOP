@@ -1,4 +1,4 @@
-﻿namespace Learn.OOPprinciples
+﻿namespace Learn.OOPprinciples.Abstractions
 {
     /*
      * Abstractizarea este un concept creat ca să ușureze munca. 

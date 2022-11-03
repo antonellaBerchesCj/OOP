@@ -1,4 +1,4 @@
-﻿namespace Learn.Abstractions
+﻿namespace Learn.OOPprinciples.Abstractions
 {
     /*
      * Pentru a acces o interfata, interfata trebuie "implementata" intr-o alta clasa.
@@ -11,7 +11,7 @@
      */
     internal class Animal_withInterfaces
     {
-       public void DoWork()
+        public void DoWork()
         {
             Cat c = new Cat();
             c.AnimalSound();

@@ -1,4 +1,4 @@
-﻿namespace Learn.OpenClosedPrinciple
+﻿namespace Learn.SOLID.OpenClosedPrinciple
 {
     public enum CoffeeSelection
     {

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Learn.OpenClosedPrinciple
+namespace Learn.SOLID.OpenClosedPrinciple
 {
     [Serializable]
     internal class CoffeeException : Exception

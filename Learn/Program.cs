@@ -1,11 +1,4 @@
-﻿using BenchmarkDotNet.Running;
-using Learn;
-using Learn.Abstractions;
-using Learn.Asyncro;
-using Learn.Closures;
-using Learn.Delegates;
-using Learn.DependencyInjection;
-using Learn.OOPprinciples;
+﻿using Learn.OOPprinciples.Abstractions;
 
 //var obj1 = AsyncAwait.DoSomethingAsync();
 
@@ -90,3 +83,16 @@ using Learn.OOPprinciples;
 
 //await AsyncTest.AsyncAwait1();
 
+Antonella a = new Antonella();
+a.BuyFavouriteFood(); // call abstract class
+a.DoSomethingElse(); // call regular method (DoSomethingElse() is not abstract method)
+
+Console.WriteLine();
+
+David d = new David();
+d.BuyFavouriteFood(); // call abstract class
+d.DoSomethingElse(); // call regular method (DoSomethingElse() is not abstract method)
+
+Shopping_withAbstractClass s = new Magazin();
+s.BuyFavouriteFood();
+s.DoSomethingElse();

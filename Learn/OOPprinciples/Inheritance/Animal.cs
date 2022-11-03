@@ -1,4 +1,4 @@
-﻿namespace Learn.Inheritance
+﻿namespace Learn.OOPprinciples.Inheritance
 {
     /* 
      * Allows us to perform a single action in diferent ways. Code reusability

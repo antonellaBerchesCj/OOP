@@ -1,4 +1,4 @@
-﻿namespace Learn.Abstractions
+﻿namespace Learn.OOPprinciples.Abstractions
 {
     /*
      * Data abstraction: process of hiding certain details and showing only essential info to the user.

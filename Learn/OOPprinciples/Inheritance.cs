@@ -17,7 +17,7 @@
      * avea proprietatile comune si apoi clasele Car si Truck care vor mostenii Vehicle si vor avea in 
      * plus proprietatile specifice.
      */
-    public static class Inheritance
+    public static class Inheritance2
     {
         // The species dog and human is in the functionality of the mammal, and modifies the two parameters legs and specie.
         public static void Execute()
