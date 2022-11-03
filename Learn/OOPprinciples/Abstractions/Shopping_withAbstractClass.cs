@@ -11,18 +11,16 @@
         public List<string> GetBasket() => _basket;
 
 
-        abstract public void BuyFavouriteFood();
-        abstract public void Load();
+        abstract public List<string> Load();
         abstract public void Store();
         abstract public void Delete();
-        abstract public void Update(List<string> products);
+        abstract public int Update(List<string> products);
 
 
         public void DoSomethingElse()
         {
             _basket.ForEach(b => Console.WriteLine(b));
         }
-
     }
 
     public class Antonella : IShopping
@@ -61,47 +59,56 @@
 
     public class Magazin_Electrocasnice : Shopping_withAbstractClass
     {
-        public override void BuyFavouriteFood()
-        {
-        }
-
         public override void Delete()
         {
         }
 
-        public override void Load()
+        public override List<string> Load()
         {
+            List<string> list = new List<string>();
+            list.Add("microunde");
+            list.Add("frigider");
+
+            list.ForEach(l => Console.WriteLine(l));
+
+            return list;
         }
 
         public override void Store()
         {
         }
 
-        public override void Update(List<string> products)
+        public override int Update(List<string> products)
         {
+            return 1;
         }
     }
 
-    public class Magazin_Food : Shopping_withAbstractClass
+    public class Magazin_Sport : Shopping_withAbstractClass
     {
-        public override void BuyFavouriteFood()
-        {
-        }
+        private List<string> _basketList = new List<string>();
 
         public override void Delete()
         {
         }
 
-        public override void Load()
+        public override List<string> Load()
         {
+            _basketList.Add("minge");
+            _basketList.Add("ghete iarna");
+
+            _basketList.ForEach(l => Console.WriteLine(l));
+
+            return _basketList;
         }
 
         public override void Store()
         {
         }
 
-        public override void Update(List<string> products)
+        public override int Update(List<string> products)
         {
+            return 1;
         }
     }
 }
