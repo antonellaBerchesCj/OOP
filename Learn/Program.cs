@@ -1,4 +1,5 @@
-﻿using Learn.OOPprinciples.Abstractions;
+﻿using Learn;
+using Learn.OOPprinciples.Abstractions;
 
 //var obj1 = AsyncAwait.DoSomethingAsync();
 
@@ -85,30 +86,31 @@
 
 #region shoppingCart
 
-Antonella a = new Antonella();
-a.BuyFavouriteFood(); // call regular method
-a.DoSomethingElse(); // call regular method
+//Antonella a = new Antonella();
+//a.BuyFavouriteFood(); // call regular method
+//a.DoSomethingElse(); // call regular method
 
-Console.WriteLine();
+//Console.WriteLine();
 
-David d = new David();
-d.BuyFavouriteFood(); // call regular method
-d.DoSomethingElse(); // call regular method
+//David d = new David();
+//d.BuyFavouriteFood(); // call regular method
+//d.DoSomethingElse(); // call regular method
 
-Console.WriteLine();
+//Console.WriteLine();
 
-Shopping_withAbstractClass s = new Magazin_Electrocasnice();
-s.DoSomethingElse(); // call abstract class
-s.GetBasket(); // call regular method
+//Shopping_withAbstractClass s = new Magazin_Electrocasnice();
+//s.DoSomethingElse(); // call abstract class
+//s.GetBasket(); // call regular method
 
-Console.WriteLine();
+//Console.WriteLine();
 
-Magazin_Electrocasnice e = new Magazin_Electrocasnice();
-s.Load(); // call abstract class
+//Magazin_Electrocasnice e = new Magazin_Electrocasnice();
+//s.Load(); // call abstract class
 
-Console.WriteLine();
+//Console.WriteLine();
 
-Magazin_Sport sp = new Magazin_Sport();
-sp.Load(); // call abstract class
+//Magazin_Sport sp = new Magazin_Sport();
+//sp.Load(); // call abstract class
 
 #endregion
+
