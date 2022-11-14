@@ -1,5 +1,7 @@
 ﻿using Learn;
+using Learn.ExceptionsBlocks;
 using Learn.OOPprinciples.Abstractions;
+using Learn.Sealed;
 
 //var obj1 = AsyncAwait.DoSomethingAsync();
 
@@ -114,3 +116,20 @@ using Learn.OOPprinciples.Abstractions;
 
 #endregion
 
+//Yield.Execute();
+
+#region sealed class
+//// ex. 1
+//Manager m1 = new Manager();
+//m1.GetEmployeeData();
+//m1.DisplayEmployeeData();
+//Console.ReadKey();
+
+//// ex. 2
+//Printer p = new Printer();
+//p.Execute();
+#endregion
+
+//FinallyKeywordEx2.DummyMethod();
+
+//HashSetExamples.DummyMethod1();

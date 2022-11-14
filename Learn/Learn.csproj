@@ -11,6 +11,7 @@
 
 	<ItemGroup>
 		<!-- Add the package -->
+		<PackageReference Include="Cqrs" Version="4.4.1.23" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
 		<PackageReference Include="NetEscapades.EnumGenerators" Version="1.0.0-beta04" PrivateAssets="all" ExcludeAssets="compile;runtime" />
 		<!-- -->

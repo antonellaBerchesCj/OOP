@@ -1,4 +1,4 @@
-﻿namespace Learn
+﻿namespace Learn.ExceptionsBlocks
 {
     /*
      * throw ex; -> rethrow an exception. It will not preserve the original exception and creates a new one. It resets StackTrace and the exact location of the issued error is not known
