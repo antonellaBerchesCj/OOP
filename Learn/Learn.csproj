@@ -11,13 +11,17 @@
 
 	<ItemGroup>
 		<!-- Add the package -->
+		<PackageReference Include="Colorful.Console" Version="1.2.15" />
 		<PackageReference Include="Cqrs" Version="4.4.1.23" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
 		<PackageReference Include="NetEscapades.EnumGenerators" Version="1.0.0-beta04" PrivateAssets="all" ExcludeAssets="compile;runtime" />
 		<!-- -->
 		<PackageReference Include="AutoMapper" Version="12.0.0" />
 		<PackageReference Include="BenchmarkDotNet" Version="0.13.2" />
+		<PackageReference Include="ReflectionMagic" Version="4.1.0" />
 		<PackageReference Include="System.Collections" Version="4.3.0" />
+		<PackageReference Include="System.Console" Version="4.3.1" />
+		<PackageReference Include="VSConsole" Version="1.1.0" />
 	</ItemGroup>
 
 </Project>
